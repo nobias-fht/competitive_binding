@@ -27,3 +27,5 @@ The notebook expects the following format. for the `.csv` file:
 
 
 The values should be separated by a comma (`,`) and the decimals indicated by a dot (`.`). Check out [the example file](example.csv).
+
+:warning: Make sure your data is in the proper format!
