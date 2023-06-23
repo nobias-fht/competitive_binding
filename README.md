@@ -19,7 +19,7 @@ We use conda to set up a specific Python environment containing all the packages
 The notebook expects the following format. for the `.csv` file:
 
 
-| L_T (uM) | C1 (%) replicate 1 | ... | C2 (%) replicate 1 | ... |
+| L_T (uM) | C1 replicate 1 (%) | ... | C2 replicate 1 (%) | ... |
 |----------|:------------------:|:---:|:------------------:|:---:|
 | 0.01     | 56.23              | ... | ...                | ... |
 | 0.1      | ...                | ... | ...                | ... |
