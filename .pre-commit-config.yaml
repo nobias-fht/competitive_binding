@@ -1,0 +1,15 @@
+# enable pre-commit.ci at https://pre-commit.ci/
+# it adds:
+# 1. auto fixing pull requests
+# 2. auto updating the pre-commit configuration
+ci:
+  autoupdate_schedule: monthly
+  autofix_commit_msg: "style(pre-commit.ci): auto fixes [...]"
+  autoupdate_commit_msg: "ci(pre-commit.ci): autoupdate"
+
+repos:
+  # strip out jupyter notebooks
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout
