@@ -1,0 +1,29 @@
+# Protein-protein interaction
+
+Code to fit the model described in [Roehrl *et al*, Biochemistry 43.51 (2004): 16056-16066](https://pubs.acs.org/doi/full/10.1021/bi048233g?casa_token=rlvgtYAYetcAAAAA%3Av59DOeTp14qDL3OZDasWt-_LJYpS1buuMrQI9McanroG3nbRCansk8UERtaN8XlYoF2zyAInV6gE2Fqx) to experimental data.
+
+
+## Installation
+
+We use conda to set up a specific Python environment containing all the packages we want to use.
+
+1. Download this repository (either by using `git clone` on the terminal or just downloading and unzipping).
+2. If you don't have `conda`, install [miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html)
+3. In the command line terminal, navigate to this repository and type `conda env create -f env.yml`
+4. Activate environment: `conda activate protprot`
+5. Finally, start jupyter notebook byt typing `jupyter`.
+
+
+## Data format
+
+The notebook expects the following format. for the `.csv` file:
+
+
+| L_T (uM) | F_SB (%) replicate 1 | F_SB (%) replicate 2 | ... |
+|----------|:--------------------:|:--------------------:|:---:|
+| 0.01     | 56.23                | ...                  | ... |
+| 0.1      | ...                  | ...                  | ... |
+| 10       | ...                  | ...                  | ... |
+
+
+The values should be separated by a comma (`,`) and the decimals indicated by a dot (`.`).
